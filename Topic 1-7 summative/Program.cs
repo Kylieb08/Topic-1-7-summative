@@ -5,10 +5,10 @@
         static void Main(string[] args)
         {
             //Variables
-            Random generator = new Random();
-            string userChoice, computerChoice;
+            Random computerChoice = new Random();
+            string userChoice;
             double money, bet;
-            int wins = 0, losses = 0, ties = 0;
+            int win = 0, loss = 0, tie = 0;
             bool done = false;
 
             Console.WriteLine("Welcome! This is a game of rock paper scissors");
@@ -50,12 +50,31 @@
                 Console.WriteLine();
                 Console.WriteLine("Rock, paper, or scissors?");
                 userChoice = Console.ReadLine();
-                while (userChoice.ToLower() != "rock" || userChoice.ToLower() != "paper" || userChoice.ToLower() != "scissors" || userChoice.ToLower() != "rules" || userChoice.ToLower() != "quit")
+                while (userChoice.ToLower() != "rock" && userChoice.ToLower() != "paper" && userChoice.ToLower() != "scissors" && userChoice.ToLower() != "rules" && userChoice.ToLower() != "quit")
                 {
                     Console.WriteLine("That is not valid input");
                 }
-                
 
+                if (userChoice.ToLower() == "quit")
+                {
+                    Console.WriteLine("You had $" + money + " left in your account");
+                    Console.WriteLine("You won " + win + " times");
+                    Console.WriteLine("You lost " + loss + " times");
+                    Console.WriteLine("You tied " + tie + " times");
+                    Console.WriteLine("Thank you for playing");
+                    done = true;
+                }
+
+                else if (userChoice.ToLower() == "rules")
+                {
+                    Console.WriteLine("The rules are as following:");
+                    Console.WriteLine("You choose rock, paper or scissors. The program does the same");
+                    Console.WriteLine("Rock beats scissors, scissors beats paper, paper beats rock");
+                    Console.WriteLine("If you beat the program, you win the bet. If the program beats you, you lose the bet");
+                    Console.WriteLine("If you and the program tie, nothing happens");
+                    Console.WriteLine("The game end either when you quit or when you run out of money");
+                }
+              
             }
 
         }
