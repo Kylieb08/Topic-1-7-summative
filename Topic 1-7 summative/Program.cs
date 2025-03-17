@@ -15,7 +15,7 @@
             Thread.Sleep(1000);
             Console.WriteLine("To play, the program will prompt you for a choice: rock, paper, or scissors");
             Thread.Sleep(2000);
-            Console.WriteLine("You can also quit at any time by typing 'quit'");
+            Console.WriteLine("If you would like to quit, type 'quit' when prompted for rock, paper, or scissors");
             Thread.Sleep(2000);
             Console.WriteLine("You will be prompted for how much money you're starting with, and how much you would like to bet");
             Thread.Sleep(2000);
@@ -111,31 +111,31 @@
 
                 else if (userChoice.ToLower() == "paper")
                 {
-                   if (computerChoice == 1)
-                   {
+                    if (computerChoice == 1)
+                    {
                         Console.WriteLine("You won!");
                         win += 1;
                         money += bet;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
-                   }
+                    }
 
-                   else if (computerChoice == 2)
-                   {
+                    else if (computerChoice == 2)
+                    {
                         Console.WriteLine("You tied");
                         tie += 1;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
-                   }
+                    }
 
-                   else
-                   {
+                    else
+                    {
                         Console.WriteLine("You lost :(");
                         loss += 1;
                         money -= bet;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
-                   }
+                    }
                 }
 
                 else if (userChoice.ToLower() == "scissors")
