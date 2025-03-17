@@ -165,7 +165,9 @@
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
                     }
+                    
                 }
+                Console.Clear();
 
                 if (money <= 0)
                 {
