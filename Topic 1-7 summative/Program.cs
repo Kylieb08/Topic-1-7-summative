@@ -80,38 +80,38 @@
                     Console.WriteLine();
                 }
 
-                ////else if (userChoice.ToLower() == "rock")
-                ////{
-                ////    if (computerChoice == 3)
-                ////    {
-                ////        Console.WriteLine("You won!");
-                ////        win += 1;
-                ////        money += bet;
-                ////        Console.WriteLine("You have $" + money + " in your account");
-                ////        Console.WriteLine();
-                ////    }
+                else if (userChoice.ToLower() == "rock")
+                {
+                    if (computerChoice == 3)
+                    {
+                        Console.WriteLine("You won!");
+                        win += 1;
+                        money += bet;
+                        Console.WriteLine("You have $" + money + " in your account");
+                        Console.WriteLine();
+                    }
 
-                ////    else if (computerChoice == 1)
-                ////    {
-                ////        Console.WriteLine("You tied");
-                ////        tie += 1;
-                ////        Console.WriteLine("You have $" + money + " in your account");
-                ////        Console.WriteLine();
-                ////    }
+                    else if (computerChoice == 1)
+                    {
+                        Console.WriteLine("You tied");
+                        tie += 1;
+                        Console.WriteLine("You have $" + money + " in your account");
+                        Console.WriteLine();
+                    }
 
-                ////    else
-                ////    {
-                ////        Console.WriteLine("You lost :(");
-                ////        loss += 1;
-                ////        money -= bet;
-                ////        Console.WriteLine("You have $" + money + " in your account");
-                ////        Console.WriteLine();
-                ////    }
-                ////}
+                    else
+                    {
+                        Console.WriteLine("You lost :(");
+                        loss += 1;
+                        money -= bet;
+                        Console.WriteLine("You have $" + money + " in your account");
+                        Console.WriteLine();
+                    }
+                }
 
                 else if (userChoice.ToLower() == "paper")
                 {
-                   if (computerChoice == 2)
+                   if (computerChoice == 1)
                    {
                         Console.WriteLine("You won!");
                         win += 1;
@@ -136,6 +136,35 @@
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
                    }
+                }
+
+                else if (userChoice.ToLower() == "scissors")
+                {
+                    if (computerChoice == 2)
+                    {
+                        Console.WriteLine("You won!");
+                        win += 1;
+                        money += bet;
+                        Console.WriteLine("You have $" + money + " in your account");
+                        Console.WriteLine();
+                    }
+
+                    else if (computerChoice == 3)
+                    {
+                        Console.WriteLine("You tied");
+                        tie += 1;
+                        Console.WriteLine("You have $" + money + " in your account");
+                        Console.WriteLine();
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("You lost :(");
+                        loss += 1;
+                        money -= bet;
+                        Console.WriteLine("You have $" + money + " in your account");
+                        Console.WriteLine();
+                    }
                 }
 
                 if (money <= 0)
