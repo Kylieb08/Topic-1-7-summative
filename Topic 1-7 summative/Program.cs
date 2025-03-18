@@ -33,7 +33,9 @@
 
             while (!done)
             {
-                computerChoice = generator.Next(1, 4);
+                //The game is a little bit rigged. If it chooses 4, the player loses no matter what
+                //But they don't know that
+                computerChoice = generator.Next(1, 5);
 
                 
 
