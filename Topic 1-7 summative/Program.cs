@@ -31,6 +31,8 @@
 
             Console.WriteLine("You have $" + money + " in your account");
 
+            //ADD BEEPS!!!!!!!!!!!!!!
+
             while (!done)
             {
                 Console.ForegroundColor = ConsoleColor.White;
@@ -123,7 +125,7 @@
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("You lost :)");
+                        Console.WriteLine("You lost :(");
                         loss += 1;
                         money -= bet;
                         totalRounds += 1;
@@ -167,7 +169,7 @@
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("You lost :)");
+                        Console.WriteLine("You lost :(");
                         loss += 1;
                         money -= bet;
                         totalRounds += 1;
@@ -211,7 +213,7 @@
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("You lost :)");
+                        Console.WriteLine("You lost :(");
                         loss += 1;
                         money -= bet;
                         totalRounds += 1;
@@ -224,7 +226,6 @@
                     
                 }
                 
-
                 if (money <= 0)
                 {
                     Console.WriteLine("You are out of money");
