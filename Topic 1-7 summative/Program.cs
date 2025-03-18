@@ -8,7 +8,7 @@
             Random generator = new Random();
             string userChoice;
             double money, bet;
-            int win = 0, loss = 0, tie = 0, computerChoice;
+            int win = 0, loss = 0, tie = 0, computerChoice, totalRounds = 0;
             bool done = false;
 
             Console.WriteLine("Welcome! This is a game of rock paper scissors");
@@ -50,11 +50,15 @@
                 while (userChoice.ToLower() != "rock" && userChoice.ToLower() != "paper" && userChoice.ToLower() != "scissors" && userChoice.ToLower() != "rules" && userChoice.ToLower() != "quit")
                 {
                     Console.WriteLine("That is not valid input");
+                    Console.WriteLine("Please try again");
+                    userChoice = Console.ReadLine();
+                    Console.WriteLine();
                 }
 
                 if (userChoice.ToLower() == "quit")
                 {
                     Console.WriteLine("You had $" + money + " left in your account");
+                    Console.WriteLine("You played " + totalRounds + " times");
                     Console.WriteLine("You won " + win + " times");
                     Console.WriteLine("You lost " + loss + " times");
                     Console.WriteLine("You tied " + tie + " times");
@@ -78,6 +82,9 @@
                     Thread.Sleep(2000);
                     Console.WriteLine("The game ends either when you quit or when you run out of money");
                     Console.WriteLine();
+                    Console.WriteLine("Press enter to continue");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
 
                 else if (userChoice.ToLower() == "rock")
@@ -87,16 +94,24 @@
                         Console.WriteLine("You won!");
                         win += 1;
                         money += bet;
+                        totalRounds += 1;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
+                        Console.WriteLine("Press enter to continue");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
                     else if (computerChoice == 1)
                     {
                         Console.WriteLine("You tied");
                         tie += 1;
+                        totalRounds += 1;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
+                        Console.WriteLine("Press enter to continue");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
                     else
@@ -104,8 +119,12 @@
                         Console.WriteLine("You lost :(");
                         loss += 1;
                         money -= bet;
+                        totalRounds += 1;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
+                        Console.WriteLine("Press enter to continue");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                 }
 
@@ -116,16 +135,24 @@
                         Console.WriteLine("You won!");
                         win += 1;
                         money += bet;
+                        totalRounds += 1;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
+                        Console.WriteLine("Press enter to continue");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
                     else if (computerChoice == 2)
                     {
                         Console.WriteLine("You tied");
                         tie += 1;
+                        totalRounds += 1;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
+                        Console.WriteLine("Press enter to continue");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
                     else
@@ -133,8 +160,12 @@
                         Console.WriteLine("You lost :(");
                         loss += 1;
                         money -= bet;
+                        totalRounds += 1;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
+                        Console.WriteLine("Press enter to continue");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                 }
 
@@ -145,16 +176,24 @@
                         Console.WriteLine("You won!");
                         win += 1;
                         money += bet;
+                        totalRounds += 1;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
+                        Console.WriteLine("Press enter to continue");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
                     else if (computerChoice == 3)
                     {
                         Console.WriteLine("You tied");
                         tie += 1;
+                        totalRounds += 1;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
+                        Console.WriteLine("Press enter to continue");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
                     else
@@ -162,17 +201,28 @@
                         Console.WriteLine("You lost :(");
                         loss += 1;
                         money -= bet;
+                        totalRounds += 1;
                         Console.WriteLine("You have $" + money + " in your account");
                         Console.WriteLine();
+                        Console.WriteLine("Press enter to continue");
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     
                 }
-                Console.Clear();
+                
 
                 if (money <= 0)
                 {
                     Console.WriteLine("You are out of money");
                     Console.WriteLine("Game over");
+                    Console.WriteLine();
+                    Console.WriteLine("You had $" + money + " left in your account");
+                    Console.WriteLine("You played " + totalRounds + " times");
+                    Console.WriteLine("You won " + win + " times");
+                    Console.WriteLine("You lost " + loss + " times");
+                    Console.WriteLine("You tied " + tie + " times");
+                    Console.WriteLine("Thank you for playing");
                     done = true;
                 }
             }
