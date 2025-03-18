@@ -33,6 +33,8 @@
 
             while (!done)
             {
+                Console.ForegroundColor = ConsoleColor.White;
+
                 //The game is a little bit rigged. If it chooses 4, the player loses no matter what
                 //But they don't know that
                 computerChoice = generator.Next(1, 5);
@@ -93,6 +95,7 @@
                 {
                     if (computerChoice == 3)
                     {
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("You won!");
                         win += 1;
                         money += bet;
@@ -106,6 +109,7 @@
 
                     else if (computerChoice == 1)
                     {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("You tied");
                         tie += 1;
                         totalRounds += 1;
@@ -118,7 +122,8 @@
 
                     else
                     {
-                        Console.WriteLine("You lost :(");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("You lost :)");
                         loss += 1;
                         money -= bet;
                         totalRounds += 1;
@@ -134,6 +139,7 @@
                 {
                     if (computerChoice == 1)
                     {
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("You won!");
                         win += 1;
                         money += bet;
@@ -147,6 +153,7 @@
 
                     else if (computerChoice == 2)
                     {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("You tied");
                         tie += 1;
                         totalRounds += 1;
@@ -159,7 +166,8 @@
 
                     else
                     {
-                        Console.WriteLine("You lost :(");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("You lost :)");
                         loss += 1;
                         money -= bet;
                         totalRounds += 1;
@@ -175,6 +183,7 @@
                 {
                     if (computerChoice == 2)
                     {
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("You won!");
                         win += 1;
                         money += bet;
@@ -188,6 +197,7 @@
 
                     else if (computerChoice == 3)
                     {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("You tied");
                         tie += 1;
                         totalRounds += 1;
@@ -200,7 +210,8 @@
 
                     else
                     {
-                        Console.WriteLine("You lost :(");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("You lost :)");
                         loss += 1;
                         money -= bet;
                         totalRounds += 1;
