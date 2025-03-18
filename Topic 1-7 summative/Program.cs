@@ -32,6 +32,7 @@
             Console.WriteLine("You have $" + money + " in your account");
 
             //ADD BEEPS!!!!!!!!!!!!!!
+            //Change background colour?
 
             while (!done)
             {
@@ -240,7 +241,6 @@
                     done = true;
                 }
             }
-
         }
     }
 }
