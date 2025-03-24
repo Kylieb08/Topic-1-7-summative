@@ -98,6 +98,12 @@
                 {
                     if (computerChoice == 3)
                     {
+                        Console.WriteLine("    _______");
+                        Console.WriteLine("---'   ____)____");
+                        Console.WriteLine("          ______)");
+                        Console.WriteLine("       __________)");
+                        Console.WriteLine("       (____)");
+                        Console.WriteLine("  ---.__(___)");
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("You won!");
                         win += 1;
@@ -112,6 +118,12 @@
 
                     else if (computerChoice == 1)
                     {
+                        Console.WriteLine("     _______");
+                        Console.WriteLine(" ---'   ____)");
+                        Console.WriteLine("      (_____)");
+                        Console.WriteLine("      (_____)");
+                        Console.WriteLine("      (____)");
+                        Console.WriteLine("---.__(___)");
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("You tied");
                         tie += 1;
@@ -125,6 +137,12 @@
 
                     else
                     {
+                        Console.WriteLine("    _______");
+                        Console.WriteLine("---'   ____)____");
+                        Console.WriteLine("          ______)");
+                        Console.WriteLine("          _______)");
+                        Console.WriteLine("         _______)");
+                        Console.WriteLine(" ---.__________)");
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("You lost :(");
                         loss += 1;
@@ -142,6 +160,12 @@
                 {
                     if (computerChoice == 1)
                     {
+                        Console.WriteLine("     _______");
+                        Console.WriteLine(" ---'   ____)");
+                        Console.WriteLine("      (_____)");
+                        Console.WriteLine("      (_____)");
+                        Console.WriteLine("      (____)");
+                        Console.WriteLine("---.__(___)");
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("You won!");
                         win += 1;
@@ -156,6 +180,12 @@
 
                     else if (computerChoice == 2)
                     {
+                        Console.WriteLine("    _______");
+                        Console.WriteLine("---'   ____)____");
+                        Console.WriteLine("          ______)");
+                        Console.WriteLine("          _______)");
+                        Console.WriteLine("         _______)");
+                        Console.WriteLine(" ---.__________)");
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("You tied");
                         tie += 1;
@@ -169,6 +199,12 @@
 
                     else
                     {
+                        Console.WriteLine("    _______");
+                        Console.WriteLine("---'   ____)____");
+                        Console.WriteLine("          ______)");
+                        Console.WriteLine("       __________)");
+                        Console.WriteLine("       (____)");
+                        Console.WriteLine("  ---.__(___)");
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("You lost :(");
                         loss += 1;
@@ -186,6 +222,12 @@
                 {
                     if (computerChoice == 2)
                     {
+                        Console.WriteLine("    _______");
+                        Console.WriteLine("---'   ____)____");
+                        Console.WriteLine("          ______)");
+                        Console.WriteLine("          _______)");
+                        Console.WriteLine("         _______)");
+                        Console.WriteLine(" ---.__________)");
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("You won!");
                         win += 1;
@@ -200,6 +242,12 @@
 
                     else if (computerChoice == 3)
                     {
+                        Console.WriteLine("    _______");
+                        Console.WriteLine("---'   ____)____");
+                        Console.WriteLine("          ______)");
+                        Console.WriteLine("       __________)");
+                        Console.WriteLine("       (____)");
+                        Console.WriteLine("  ---.__(___)");
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("You tied");
                         tie += 1;
@@ -213,6 +261,12 @@
 
                     else
                     {
+                        Console.WriteLine("     _______");
+                        Console.WriteLine(" ---'   ____)");
+                        Console.WriteLine("      (_____)");
+                        Console.WriteLine("      (_____)");
+                        Console.WriteLine("      (____)");
+                        Console.WriteLine("---.__(___)");
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("You lost :(");
                         loss += 1;
@@ -244,3 +298,15 @@
         }
     }
 }
+/*
+
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+
+ 
+ 
+ */
