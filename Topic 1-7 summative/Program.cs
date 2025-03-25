@@ -64,6 +64,7 @@
 
                 if (userChoice.ToLower() == "quit")
                 {
+                    Console.ForegroundColor= ConsoleColor.Cyan;
                     Console.WriteLine();
                     Console.WriteLine("You had $" + money + " left in your account");
                     Console.WriteLine("You played " + totalRounds + " times");
@@ -284,6 +285,7 @@
                 
                 if (money <= 0)
                 {
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
                     Console.WriteLine("You are out of money");
                     Console.WriteLine("Game over");
                     Console.WriteLine();
