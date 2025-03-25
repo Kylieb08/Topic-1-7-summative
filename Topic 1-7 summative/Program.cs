@@ -64,6 +64,7 @@
 
                 if (userChoice.ToLower() == "quit")
                 {
+                    Console.WriteLine();
                     Console.WriteLine("You had $" + money + " left in your account");
                     Console.WriteLine("You played " + totalRounds + " times");
                     Console.WriteLine("You won " + win + " times");
@@ -298,15 +299,3 @@
         }
     }
 }
-/*
-
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-
- 
- 
- */
